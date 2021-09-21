@@ -39,7 +39,8 @@ def CompareFreqTab(Old_File, New_File):
     #filt = whole.loc[whole['MonthDif']>=lmt,:]
     # Sort file with largest difference at top
     
-    print(whole.head(10))
+    print(whole[['LinkVar', 'Value_x', 'Value_y', 'MonthDif']].head(10))
+    print(whole[['LinkVar', 'Value_x', 'Value_y', 'MonthDif']].tail(10))
     
     
 # Compare Base File
